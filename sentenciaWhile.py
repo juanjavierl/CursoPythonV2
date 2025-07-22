@@ -45,15 +45,16 @@ while numero <= limite:
     numero+=1 """
 
 
-numero = 1
-contador = 0
-par = 0
-while numero > 0:
-    numero = int(input("valor: "))
-    contador+=1
-    if numero % 2 == 0:
-        par = par+1
-print("Total de numeros: ", contador)
-print("Total de numeros pares: ", par)
+def contar_numero():
+    numero = 1
+    contador = 0
+    par = 0
+    while numero > 0:
+        numero = int(input("valor: "))
+        contador+=1
+        if numero % 2 == 0:
+            par = par+1
+    print("Total de numeros: ", contador)
+    print("Total de numeros pares: ", par)
 
-
+contar_numero()
