@@ -31,19 +31,30 @@ for valor in mi_tabla:
         print("encontrado") """
 
 
-def mis_datos():
+""" def mis_datos():
     alumnos = (
         ('Perico', 'Los Palotes', '201199001-5', 'Civil'),
         ('Fulano', 'De Tal',      '201199002-6', 'Electrica'),
         ('Beymar', 'De Tal',      '201199003-7', 'Mecanica'),
     )
 
-    """
     for nombre, _, _, carrera in alumnos:
         print(nombre, 'estudia', carrera) 
-    """
+    
     for i in alumnos:
         print(i[0], "estudia: ",i[3])
 
+mis_datos() """
 
-mis_datos()
+
+
+
+def esta_ordenado(tupla):
+    for i in range(len(tupla)-1):
+        if tupla[i] > tupla[i+1]:
+            return False
+    return True
+
+
+mi_tupla = (1,2,3,4,5)
+print(esta_ordenado(mi_tupla))
